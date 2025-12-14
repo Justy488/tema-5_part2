@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css_fælles/style.css" />
+    <link rel="stylesheet" href="css_agga/general.css" />
+    <link rel="stylesheet" href="css_fælles/font.css" />
+    <link rel="stylesheet" href="css_fælles/layout.css" />
+    <link rel="stylesheet" href="css_fælles/general.css" />
     <title>Document</title>
   </head>
   <body>
@@ -26,6 +31,65 @@
       <h1>Kontakt</h1>
       <h2>Special Inquiries</h2>
       <p>We offer special services for various occasions. Please fill out the form with your information and specific inquiry. We will get back to you as soon as possible.</p>
+      <section class="kontakt-form-section">
+        <h2 class="form-title">Inquiry</h2>
+
+        <form class="kontakt-form">
+          <!-- 1 -->
+          <div class="form-row">
+            <label for="fullname">Full name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" />
+          </div>
+
+          <!-- 2 -->
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" />
+          </div>
+
+          <!-- 3 -->
+          <div class="form-row">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+          </div>
+
+          <!-- 4 -->
+          <div class="form-row">
+            <label for="occasion">Occasion</label>
+            <input type="text" id="occasion" name="occasion" placeholder="Wedding, birthday, event..." />
+          </div>
+
+          <!-- split row (2 columns) -->
+          <div class="form-row form-row--split">
+            <div class="form-field">
+              <label for="date">Preferred date</label>
+              <input type="date" id="date" name="date" />
+            </div>
+
+            <div class="form-field">
+              <label for="time">Preferred time</label>
+              <input type="time" id="time" name="time" />
+            </div>
+          </div>
+
+          <!-- big message box -->
+          <div class="form-row">
+            <label for="message">Describe your request</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about the flowers, style, colours, budget..."></textarea>
+          </div>
+
+          <div class="form-row">
+            <button type="submit" class="form-submit">Send</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- OUTPUT block under the form -->
+      <section class="kontakt-output">
+        <div class="output-box">
+          <p>OUTPUT</p>
+        </div>
+      </section>
     </main>
   </body>
 </html>
