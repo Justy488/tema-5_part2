@@ -1,0 +1,103 @@
+/* CONTACT FORM – mobile first */
+
+.kontakt-form-section {
+  padding: 1.5rem 1.25rem 2rem;
+}
+
+.form-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+/* Form container – stacked layout */
+.kontakt-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* each row */
+.form-row {
+  width: 100%;
+}
+
+/* label styling */
+.kontakt-form label {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+}
+
+/* inputs + textarea styling */
+.kontakt-form input,
+.kontakt-form textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 999px; /* long pill shape */
+  border: 1px solid #d4d4d4;
+  background-color: #f3f3f3;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+/* textarea is more boxy but still rounded */
+.kontakt-form textarea {
+  border-radius: 16px;
+  resize: vertical;
+}
+
+/* split row – two columns */
+.form-row--split {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.form-row--split .form-field {
+  flex: 1;
+}
+
+/* submit button */
+.form-submit {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 999px;
+  border: none;
+  background-color: #111;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+/* OUTPUT block */
+.kontakt-output {
+  padding: 0 1.25rem 2.5rem;
+}
+
+.kontakt-output .output-box {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 180px;
+  background-color: #e3e3e3;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+/* Optional: small tweak for slightly bigger screens */
+@media (min-width: 600px) {
+  .kontakt-form-section,
+  .kontakt-output {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
