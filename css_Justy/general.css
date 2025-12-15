@@ -1,31 +1,46 @@
+/* Baggrund og generelt layout */
 body {
   background-color: #f5f5f5;
   margin: 0;
   font-family: "Merriweather", serif;
-}
-main {
-  max-width: 1100px;
-  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
+/*          Pushes the page on both sides      */
+/* main {
+  max-width: 1100px;
+  margin: 0 auto;
+} */
+
+/*          STYLING OF THE NAVIGATION BAR      */
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+}
+/* 
 .nav {
   display: flex;
   align-items: center;
   padding: 1.5rem 3rem;
-}
-
+} */
+/* 
 .logo {
   margin: 0 0 0 8em;
-}
+} */
 
-nav {
-  transparent: 1em;
-}
-
+/*          COLOR ON THE HEADER AND NAV      */
 header {
   background-color: #ffffff;
 }
 
+/*        STYLING OF THE HEADER WITH OUT LIST BUTTON (UNLISTED) and HORIZONTAL PLACEMENT */
 header ul {
   list-style: none;
   margin: 0;
@@ -39,6 +54,13 @@ header li {
   margin: 0;
 }
 
+/* Header skal være synlig over baggrund (fra eks.) */
+body > header {
+  position: relative;
+  z-index: 10;
+  background-color: transparent;
+}
+
 a {
   color: rgb(7, 9, 9);
   text-decoration: none;
@@ -46,8 +68,12 @@ a {
 
 a:hover {
   text-decoration: underline;
+  background-color: #0d0b0b;
+  color: white;
+  transition-delay: 500ms; /*slow animation need to find one that works*/
+  transform-style: preserve-3d;
 }
-
+/* 
 @media (max-width: 767px) {
   .burger {
     display: flex;
@@ -56,30 +82,42 @@ a:hover {
     background: none;
     border: none;
     cursor: pointer;
-  }
+  } */
 
-  .burger span {
-    width: 25px;
-    height: 3px;
-    background: white;
-  }
+.burger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+}
+/* 
+.menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  padding: 2rem;
+  transform: translateY(-200%);
+  transition: transform 0.3s ease;
+  border: #0d0b0b 1px solid;
+} */
 
-  .menu {
+/*   
+.menu {
     position: absolute;
     top: 100%;
     right: 0;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
-    width: 100%;
+    background: #ffffff;
+    width: 40%;
     padding: 2rem;
     transform: translateY(-200%);
     transition: transform 0.3s ease;
     border: #0d0b0b 1px solid;
-  }
-
-  .menu.active {
-    transform: translateY(0);
-  }
+} */
+.menu.active {
+  transform: translateY(0);
 }
 
 @media (min-width: 768px) {
@@ -87,14 +125,19 @@ a:hover {
     flex-direction: row;
     justify-content: center;
   }
-  /* 
+
+  .headercontainer img {
+    height: 100%;
+    object-fit: cover;
+  }
+
   .headercontainer {
-    height: 90vh;
-    background-image: url(../img/img_justy/header_image.png);
+    height: 300px;
+    width: 100%;
+    background-image: url("../images/headerimg.jpg");
     background-position: center;
     background-size: cover;
-   
+
     overflow: hidden;
-    padding: 2em 0;
-  } */
+  }
 }
