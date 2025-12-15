@@ -1,3 +1,35 @@
+/*            TYPOGRAFI & SKRIFTTYPE         */
+
+@font-face {
+  font-family: kugile;
+  src: url(../fonts/kugile/Kugile_Demo.ttf);
+}
+
+@font-face {
+  font-family: briliant;
+  src: url(../fonts/brillant/brillant.otf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/inter/Inter-Italic.otf);
+}
+
+@font-face {
+  font-family: Alumni Sans Pinstripe, stroke;
+  src: url(../fonts/Alumni_Sans_Pinstripe\BBH_Sans_Bartle\Radio_Canada_Big\Ramabhadra/);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-Italic.otf);
+}
+
+@font-face {
+  font-family: barcode;
+  src: url(../fonts/code-2-of-5-interleaved/code25I.ttf);
+}
+
 .courier-prime-regular {
   font-family: "Courier Prime", monospace;
   font-weight: 400;
@@ -20,4 +52,11 @@
   font-family: "Courier Prime", monospace;
   font-weight: 700;
   font-style: italic;
+}
+
+h2 {
+  font-family: briliant;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 8);
 }
