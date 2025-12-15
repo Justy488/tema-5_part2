@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-/* NAVIGATION */
+/*        NAVIGATION       */
 .nav {
   position: absolute;
   top: 0;
@@ -17,10 +17,11 @@
 }
 
 .logo svg {
-  width: 50px;
+  width: 100px;
+  height: 80px;
 }
 
-/* MENU */
+/*        PLACEMENT OF  MENU           */
 .menu {
   display: flex;
   gap: 2rem;
@@ -41,7 +42,7 @@
   color: black;
 }
 
-/* BURGER */
+/*    PLACEMENT OF BURGER */
 .burger {
   display: none;
   background: none;
@@ -55,7 +56,7 @@
   margin: 5px 0;
 }
 
-/* HERO */
+/*        HERO SECTION W IMAGE-BACKGROUND */
 .hero {
   height: 70vh;
   background-image: url("img/img_justy/header_image.png");
@@ -68,7 +69,7 @@
 }
 
 .hero::after {
-  content: "";
+  content: ""; /* I use this for the color and quality of the image on the hero section, It goes from a vivid look to a more clean look of the image.   */
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.25);
