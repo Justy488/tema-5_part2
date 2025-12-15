@@ -1,0 +1,119 @@
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/*          LOGO PLACEMENT PER. THE LEFT */
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 3rem;
+}
+
+/* LOGO */
+.logo {
+  margin: 0 0 0 8em; /* 🔑 presser resten mod højre */
+}
+
+/*          STYLING AF NAV OG HEADER     */
+
+nav {
+  transparent: 1em;
+}
+
+header {
+  /* padding: 20px; */
+  background-color: #ffffff;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+  display: flex;
+  flex-direction: column; /* mobil: links under hinanden */
+  gap: 1em;
+}
+header li {
+  margin: 0;
+}
+a {
+  color: rgb(7, 9, 9);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.headercontainer {
+  /* height: 80vh; */
+  overflow: hidden;
+  padding: 2em 0;
+}
+
+/* .button {
+  font-size: 1em;
+  background-color: #b3b3b3;
+  padding: 0.8em;
+  border-radius: 1.2em;
+  display: block;
+  text-align: center;
+} */
+/* 
+.button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(24, 25, 26);
+} */
+
+/*          HOW BIG THE SCREEN SHOULD BE     */
+
+@media (max-width: 767px) {
+  .burger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .burger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    padding: 2rem;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease;
+    border: #0d0b0b 1px solid;
+  }
+
+  .menu.active {
+    transform: translateY(0);
+  }
+}
+@media (min-width: 768px) {
+  header ul {
+    flex-direction: row; /* desktop: links ved siden af hinanden */
+    justify-content: center;
+  }
+
+  .headercontainer {
+    background-image: url(../img/img_justy/header\ image.png);
+    background-position: center;
+    background-size: cover;
+  }
+}
