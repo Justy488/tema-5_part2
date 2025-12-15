@@ -29,6 +29,11 @@
   font-family: barcode;
   src: url(../fonts/code-2-of-5-interleaved/code25I.ttf);
 }
+@font-face {
+  font-family: playfair display;
+  @import: url ("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Ramabhadra&display=swap");
+}
+@import url("https://fonts.googleapis.com/css2?family=Brillant&family=Courier+New:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,400..900;1,400..900&display=swap");
 
 .courier-prime-regular {
   font-family: "Courier Prime", monospace;
@@ -62,9 +67,9 @@ h1 {
 }
 
 h2 {
-  font-family: kugile;
+  font-family: playfair display;
   text-align: center;
-  color: rgba(0, 0, 0, 8);
+  color: rgb(106 41 49);
 }
 h3 {
   font-family: Montserrat;
