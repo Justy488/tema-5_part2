@@ -43,11 +43,12 @@ nav {
 .menu a {
   display: block;
   margin: auto;
-  padding: 10px;
-  color: #333333;
+  padding: 10px 1.5em;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
+  border: #ffffff solid 2px;
   border-radius: 2em;
 }
 

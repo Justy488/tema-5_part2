@@ -89,6 +89,7 @@ a:hover {
   height: 3px;
   background: white;
 }
+
 /* 
 .menu {
   position: absolute;
@@ -139,5 +140,58 @@ a:hover {
     background-size: cover;
 
     overflow: hidden;
+  }
+}
+
+/*      eks. del clud     */
+.header {
+  position: relative;
+  z-index: 10;
+  padding: 7em;
+}
+
+.hero_grid_1-1-1 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.headercontainer {
+  width: 100%;
+  height: 300px; /* Juster højden som ønsket */
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Under navigationen */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2; /* Over billedet */
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 60px; /* Juster gap som ønsket */
+}
+
+.logo {
+  margin-right: auto; /* Skubber menuen til højre */
+}
+
+.burger {
+  display: none; /* Skjuler burger-menuen som standard, vises ved behov */
+}
+
+@media (max-width: 767px) {
+  .burger {
+    display: flex; /* Vis burger-menuen på små skærme */
   }
 }
