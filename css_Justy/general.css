@@ -1,119 +1,96 @@
-body {
-  background-color: #f5f5f5;
-  margin: 0;
-  font-family: "Merriweather", serif;
-}
-main {
-  max-width: 1100px;
-  margin: 0 auto;
+.header {
+  position: relative;
+  width: 100%;
 }
 
-/*          LOGO PLACEMENT PER. THE LEFT */
-
+/*        NAVIGATION       */
 .nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 3rem;
   display: flex;
   align-items: center;
-  padding: 1.5rem 3rem;
+  justify-content: space-between;
+  z-index: 10;
 }
 
-/* LOGO */
-.logo {
-  margin: 0 0 0 8em; /* 🔑 presser resten mod højre */
+.logo svg {
+  width: 100px;
+  height: 80px;
 }
 
-/*          STYLING AF NAV OG HEADER     */
-
-nav {
-  transparent: 1em;
-}
-
-header {
-  /* padding: 20px; */
-  background-color: #ffffff;
-}
-
-header ul {
-  list-style: none;
-  margin: 0;
-  padding: 1em;
+/*        PLACEMENT OF  MENU           */
+.menu {
   display: flex;
-  flex-direction: column; /* mobil: links under hinanden */
-  gap: 1em;
+  gap: 2rem;
+  list-style: none;
 }
-header li {
-  margin: 0;
-}
-a {
-  color: rgb(7, 9, 9);
+
+.menu a {
+  padding: 0.5em 1.5em;
+  border: 2px solid white;
+  border-radius: 2em;
+  color: white;
   text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-.headercontainer {
-  /* height: 80vh; */
-  overflow: hidden;
-  padding: 2em 0;
+  font-size: 0.9rem;
 }
 
-/* .button {
-  font-size: 1em;
-  background-color: #b3b3b3;
-  padding: 0.8em;
-  border-radius: 1.2em;
-  display: block;
-  text-align: center;
-} */
-/* 
-.button:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(24, 25, 26);
-} */
+.menu a:hover {
+  background: white;
+  color: black;
+}
 
-/*          HOW BIG THE SCREEN SHOULD BE     */
+/*    PLACEMENT OF BURGER */
+.burger {
+  display: none;
+  background: none;
+  border: none;
+}
 
-@media (max-width: 767px) {
-  .burger {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
+.burger .line {
+  width: 25px;
+  height: 2px;
+  background: white;
+  margin: 5px 0;
+}
 
-  .burger span {
-    width: 25px;
-    height: 3px;
-    background: white;
-  }
+/*        HERO SECTION W IMAGE-BACKGROUND */
+.hero {
+  height: 70vh;
+  background-image: url("img/img_justy/header_image.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
+.hero::after {
+  content: ""; /* I use this for the color and quality of the image on the hero section, It goes from a vivid look to a more clean look of the image.   */
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.hero h1 {
+  position: relative;
+  color: white;
+  font-size: 4rem;
+  font-family: "Merriweather", serif;
+  letter-spacing: 2px;
+  z-index: 1;
+}
+
+/* MOBIL */
+@media (max-width: 800px) {
   .menu {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
-    width: 100%;
-    padding: 2rem;
-    transform: translateY(-200%);
-    transition: transform 0.3s ease;
-    border: #0d0b0b 1px solid;
+    display: none;
   }
 
-  .menu.active {
-    transform: translateY(0);
-  }
-}
-@media (min-width: 768px) {
-  header ul {
-    flex-direction: row; /* desktop: links ved siden af hinanden */
-    justify-content: center;
-  }
-
-  .headercontainer {
-    background-image: url(../img/img_justy/header\ image.png);
-    background-position: center;
-    background-size: cover;
+  .burger {
+    display: block;
   }
 }
