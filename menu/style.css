@@ -155,3 +155,10 @@ nav {
   cursor: pointer;
   display: flex;
 }
+
+/*                styling of second image            */
+.second_image img {
+  width: 10%;
+  height: 20%;
+  align-content: center;
+}
