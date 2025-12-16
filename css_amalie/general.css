@@ -225,11 +225,6 @@ p { color: black ;
     grid-row: span 2;
   }
   
-  /* de små til højre */
-  .feature-item.feature-small {
-    /* ingen ekstra nødvendig – de arver grid-auto-rows */
-  }
-  
   /* CTA på billederne */
   .feature-cta {
     position: absolute;
@@ -321,6 +316,8 @@ p { color: black ;
     text-decoration: none;
     color: #E04444;
   }
+
+  /* Story tekst-stykke */
   
   .story-section {
     width: min(92%, 1100px);
@@ -337,7 +334,7 @@ p { color: black ;
   }
   
   .story-section .page-subtitle {
-    margin: 0 0 64px;
+    margin: 0 0 12px;
     font-family: "Courier Prime Code", serif;
     font-size: 1rem;
     line-height: 1.5;
@@ -345,7 +342,7 @@ p { color: black ;
   }
   
   .story-section .page-info {
-    margin: 0 0 64px;
+    margin: 0 0 12px;
     font-family: "Courier Prime Code", serif;
     line-height: 1.6;
     color: #2b2b2b;
