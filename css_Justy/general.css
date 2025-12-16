@@ -94,3 +94,14 @@
     display: block;
   }
 }
+
+/*          footer ændring         */
+.footer-inner {
+  width: min(92%, 1100px);
+  margin: 0 auto;
+  padding: 64px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
