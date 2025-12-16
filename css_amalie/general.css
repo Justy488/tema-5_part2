@@ -42,19 +42,12 @@ h2 { color: #6A2931;
 
 h3 {
     font-family: "Courier Prime Code", serif;
-
 }
 
 p { color: black ;
     font-family: "Courier Prime Code", serif;}
 
     /* ===== TRANSPARENT MENU OVER HERO ===== */
-
-    /* Fjern browser-margin så header kan flugte helt ud til kanterne */
-    body { 
-      margin: 20; 
-    }
-    
     /* Header ovenpå hero (transparent) */
     header {
       position: absolute;     /* ligger ovenpå hero */
