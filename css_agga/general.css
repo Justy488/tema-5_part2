@@ -3,15 +3,11 @@
   width: 100%;
 }
 .nav {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   padding: 1.5rem 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 10;
 }
 .logo svg {
   width: 100px;
@@ -54,21 +50,11 @@
 }
 
 .herotitle {
-  height: 40vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.herotitle h1 {
-  position: relative;
   color: white;
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: "Merriweather", serif;
   letter-spacing: 2px;
-  z-index: 1;
+  margin-left: 1rem; /* little space from the logo */
 }
 
 /* CONTACT FORM  */
