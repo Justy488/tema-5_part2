@@ -30,7 +30,9 @@
     font-display: swap;
   }  
 
-body { background-color: #FCF9F1; }
+body { background-color: #FCF9F1; 
+  margin: 0; 
+}
 
 h1 { color: #ffffff; 
     font-family: "Luxurious", serif;}
@@ -45,6 +47,107 @@ h3 {
 
 p { color: black ;
     font-family: "Courier Prime Code", serif;}
+
+    /* ===== TRANSPARENT MENU OVER HERO ===== */
+
+    /* Fjern browser-margin så header kan flugte helt ud til kanterne */
+    body { 
+      margin: 20; 
+    }
+    
+    /* Header ovenpå hero (transparent) */
+    header {
+      position: absolute;     /* ligger ovenpå hero */
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;           /* vigtig: over hero::before og hero-content */
+      background: transparent;
+      padding: 18px 4vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    /* Logo */
+    .logo img {
+      display: block;
+      height: 78px;           /* justér efter smag */
+      width: auto;
+    }
+    
+    /* Menu (pills) */
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+    
+    /* Links som “gennemsigtige knapper” */
+    .menu a {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: 999px;
+      border: 2px solid rgba(255, 255, 255, 0.9);
+      color: #fff;
+      text-decoration: none;
+      font-family: "Courier Prime Code", serif;
+    
+      /* glas-agtig gennemsigtighed */
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(0px);
+    }
+    
+    .menu a:hover,
+    .menu a:focus-visible {
+      background: rgba(255, 255, 255, 0.16);
+      outline: none;
+    }
+    
+    /* Burger skjules på desktop (kan ændres hvis du bruger den på mobil) */
+    .burger {
+      background: transparent;
+      border: 0;
+      padding: 0;
+      display: none;
+    }
+    
+    .burger .line {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: #fff;
+      margin: 6px 0;
+    }
+    
+    /* Mobil: vis burger og skjul menu indtil du toggler den med JS */
+    @media (max-width: 767px) {
+      .burger { display: block; }
+    
+      .menu {
+        display: none; /* bliver vist når du toggler en class i JS */
+        position: absolute;
+        right: 4vw;
+        top: 70px;
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px;
+        border-radius: 16px;
+        background: rgba(0,0,0,0.25);
+        backdrop-filter: blur(8px);
+      }
+    
+      nav.is-open .menu {
+        display: flex;
+      }
+    }
+    
+
+
+
 
 
 /* HERO */
@@ -91,7 +194,7 @@ p { color: black ;
   z-index: 2;
   width: min(92%, 1100px);
   margin: 0 auto;
-  padding: 24px 0 28px;
+  padding: 90px 0 28px;
 }
 
 /* Tekstblokken */
