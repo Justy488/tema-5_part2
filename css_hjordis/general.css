@@ -6,6 +6,7 @@ h2 {
   text-align: center;
   font-size: 36px;
 }
+
 h1 {
   text-align: center;
   font-size: 50px;
@@ -15,6 +16,19 @@ p,
   font-family: "Courier Prime", monospace;
   font-weight: 400;
   font-style: normal;
+}
+.product_text p {
+  margin: 1em;
+  text-align: justify;
+}
+.product_text h2 {
+  text-align: center;
+  font-size: 24px;
+}
+.alignment {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;
 }
 
 .product_content {
@@ -33,13 +47,16 @@ p,
 .img_box img {
   width: 100%;
 }
-.product_box .product-title {
-  font-size: 20px;
+.product_box .product_title {
+  font-size: 1.1rem;
   margin-top: 10px;
   font-family: "Courier Prime", monospace;
-  font-weight: 1400;
+  font-weight: 600;
   font-style: normal;
+  text-align: start;
+  padding-left: 0;
 }
+
 .product_box .price_and_cart {
   display: flex;
   justify-content: space-between;
@@ -55,5 +72,16 @@ p,
   }
   .product_grid {
     padding: 100px 9% 30px;
+  }
+  .product_text h2 {
+    font-size: 36px;
+  }
+  .product_text p {
+    text-align: center;
+    margin: 1em;
+    font-size: 20px;
+  }
+  .product_text h1 {
+    font-size: 60px;
   }
 }

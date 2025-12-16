@@ -123,7 +123,7 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: #ffffff;
+    background-color: rgb(93, 21, 78);
     position: absolute;
     top: 94px;
     left: 0;
@@ -147,7 +147,6 @@ nav {
   position: relative;
   height: 70vh;
   background-image: url("/img_hjordis/Heroimghmj.webp");
-
   background-size: cover;
   background-position: center;
   display: flex;
