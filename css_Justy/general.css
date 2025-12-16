@@ -1,0 +1,96 @@
+.header {
+  position: relative;
+  width: 100%;
+}
+
+/*        NAVIGATION       */
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.logo svg {
+  width: 100px;
+  height: 80px;
+}
+
+/*        PLACEMENT OF  MENU           */
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.menu a {
+  padding: 0.5em 1.5em;
+  border: 2px solid white;
+  border-radius: 2em;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.menu a:hover {
+  background: white;
+  color: black;
+}
+
+/*    PLACEMENT OF BURGER */
+.burger {
+  display: none;
+  background: none;
+  border: none;
+}
+
+.burger .line {
+  width: 25px;
+  height: 2px;
+  background: white;
+  margin: 5px 0;
+}
+
+/*        HERO SECTION W IMAGE-BACKGROUND */
+.hero {
+  height: 70vh;
+  background-image: url("img/img_justy/header_image.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::after {
+  content: ""; /* I use this for the color and quality of the image on the hero section, It goes from a vivid look to a more clean look of the image.   */
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.hero h1 {
+  position: relative;
+  color: white;
+  font-size: 4rem;
+  font-family: "Merriweather", serif;
+  letter-spacing: 2px;
+  z-index: 1;
+}
+
+/* MOBIL */
+@media (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+}

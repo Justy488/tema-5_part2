@@ -1,0 +1,99 @@
+/*            TYPOGRAFI & SKRIFTTYPE         */
+
+@font-face {
+  font-family: kugile;
+  src: url(../fonts/kugile/Kugile_Demo.ttf);
+}
+
+@font-face {
+  font-family: brillant;
+  src: url(../fonts/brillant/brillant.otf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/inter/Inter-Italic.otf);
+}
+
+@font-face {
+  font-family: Alumni Sans Pinstripe, stroke;
+  src: url(../fonts/Alumni_Sans_Pinstripe\BBH_Sans_Bartle\Radio_Canada_Big\Ramabhadra/);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/montserrat/Montserrat-Italic.otf);
+}
+
+@font-face {
+  font-family: barcode;
+  src: url(../fonts/code-2-of-5-interleaved/code25I.ttf);
+}
+@font-face {
+  font-family: playfair display;
+  @import: url ("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Ramabhadra&display=swap");
+}
+@import url("https://fonts.googleapis.com/css2?family=Brillant&family=Courier+New:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,400..900;1,400..900&display=swap");
+
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courier-prime-bold {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.courier-prime-regular-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.courier-prime-bold-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+h1 {
+  font-family: brillant;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 8);
+  padding: 1em;
+  margin: 2em 0 0 0;
+}
+
+h2 {
+  font-family: playfair display;
+  text-align: center;
+  color: rgb(106 41 49);
+  padding: 10px;
+  margin: 10px;
+}
+h3 {
+  font-family: Montserrat;
+  text-align: center;
+  color: rgba(0, 0, 0, 8);
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  color: rgba(0, 0, 0, 8);
+  max-width: 80ch;
+
+  padding: 0.5em 1em;
+  margin: 0 auto 1.5em;
+  font-size: 1.1rem;
+  color: rgb(1, 1, 2);
+  line-height: 1.5;
+  align-content: left;
+}
+
+.info p {
+  align-content: center;
+}
