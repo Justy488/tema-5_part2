@@ -1,4 +1,77 @@
-/* CONTACT FORM – mobile first */
+.header {
+  position: relative;
+  width: 100%;
+}
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+.logo svg {
+  width: 100px;
+  height: 80px;
+}
+
+/*        PLACEMENT OF  MENU           */
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.menu a {
+  padding: 0.5em 1.5em;
+  border: 2px solid white;
+  border-radius: 2em;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.menu a:hover {
+  background: white;
+  color: black;
+}
+
+/*    PLACEMENT OF BURGER */
+.burger {
+  display: none;
+  background: none;
+  border: none;
+}
+
+.burger .line {
+  width: 25px;
+  height: 2px;
+  background: white;
+  margin: 5px 0;
+}
+
+.herotitle {
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.herotitle h1 {
+  position: relative;
+  color: white;
+  font-size: 4rem;
+  font-family: "Merriweather", serif;
+  letter-spacing: 2px;
+  z-index: 1;
+}
+
+/* CONTACT FORM  */
 
 .kontakt-form-section {
   padding: 1.5rem 1.25rem 2rem;
@@ -93,7 +166,6 @@
   font-size: 0.8rem;
 }
 
-/* Optional: small tweak for slightly bigger screens */
 @media (min-width: 600px) {
   .kontakt-form-section,
   .kontakt-output {
