@@ -57,15 +57,6 @@ p,
   padding-left: 0;
 }
 
-.product_box .price_and_cart {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.price_and_cart .add-cart {
-  font-size: 20px;
-  cursor: pointer;
-}
 @media (min-width: 800px) {
   .product_content {
     grid-template-columns: repeat(3, 1fr);
