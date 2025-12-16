@@ -91,7 +91,11 @@ p {
   font-size: 1.1rem;
   color: rgb(1, 1, 2);
   line-height: 1.5;
-  align-content: left;
+
+  text-align: left;
+}
+.cite p {
+  text-align: center;
 }
 
 .info p {
