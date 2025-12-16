@@ -76,7 +76,7 @@ h2 {
   margin: 10px;
 }
 .box-text h2 {
-  text-align: left;
+  color: rgb(255, 255, 255);
 }
 h3 {
   font-family: Montserrat;
