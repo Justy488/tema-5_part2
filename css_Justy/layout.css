@@ -1,0 +1,29 @@
+@media (width >= 672px) {
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.open {
+  display: block;
+  margin: auto;
+  max-width: fit-content;
+  /* max-width: 100%;
+  height: auto; */
+  width: 500px;
+  height: 500px;
+  /* padding: 0;
+  margin: 0; */
+}
+
+/*              LAYOUT FOR SHOPFOTOS */
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  aspect-ratio: 1 / 1;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
