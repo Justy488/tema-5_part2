@@ -225,7 +225,12 @@
 /* MIDDLE + RIGHT: SVG sizing */
 .footer-middle svg,
 .footer-right svg {
-  max-width: 250px;
+  max-width: 200px;
+  height: auto;
+}
+
+.footer-right svg {
+  width: 400px;
   height: auto;
 }
 
