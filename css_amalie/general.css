@@ -188,6 +188,7 @@ p { color: black ;
     font-family: "Luxurious", serif;
     font-size: 2.5rem;
     text-align: center;
+    margin: 64px auto;
   }
   
   .feature {
@@ -245,6 +246,8 @@ p { color: black ;
     font-size: 0.9rem;
     background: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(6px);
+
+    white-space: nowrap;
   }
   
   .feature-cta:hover,
@@ -322,7 +325,7 @@ p { color: black ;
   .story-section {
     width: min(92%, 1100px);
     margin: 64px auto;
-    text-align: center; /* matcher feature-title */
+    /* text-align: center; */
   }
   
   .story-section .page-title {
