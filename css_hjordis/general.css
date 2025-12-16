@@ -8,7 +8,7 @@ h2 {
 }
 h1 {
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
 }
 p,
 .price {
@@ -17,14 +17,14 @@ p,
   font-style: normal;
 }
 
-.product_grid {
-  padding: 100px 9% 30px;
-}
-
 .product_content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+
+.product_grid {
+  padding: 60px 5% 30px;
 }
 
 .product_box .img_box {
@@ -48,4 +48,12 @@ p,
 .price_and_cart .add-cart {
   font-size: 20px;
   cursor: pointer;
+}
+@media (min-width: 800px) {
+  .product_content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .product_grid {
+    padding: 100px 9% 30px;
+  }
 }
