@@ -51,17 +51,20 @@ p { color: black ;
     /* ===== TRANSPARENT MENU OVER HERO ===== */
     /* Header ovenpå hero (transparent) */
     header {
-      position: absolute;     /* ligger ovenpå hero */
+      position: absolute;
       top: 0;
       left: 0;
       width: 100%;
-      z-index: 999;           /* vigtig: over hero::before og hero-content */
+      z-index: 999;
       background: transparent;
-      padding: 0;
+    
+      padding-top: 10px;   /* 👈 JUSTÉR DEN HER */
+      padding-bottom: 0;
+    
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      justify-content: center; /* vigtigt */
     }
+    
     
     /* Logo */
     .logo img {
@@ -69,6 +72,18 @@ p { color: black ;
       height: 78px;           /* justér efter smag */
       width: auto;
     }
+
+    header nav {
+      width: min(92%, 1100px);   /* 👈 samme bredde som dine sections */
+      margin: 24px auto 0;       /* 👈 centrerer og giver luft fra toppen */
+      padding: 18px 36px;        /* 👈 indvendig luft i menu-området */
+      border-radius: 18px;
+    
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; /* menu ligger til højre inde i baren */
+    }
+    
     
     /* Menu (pills) */
     .menu {
@@ -94,7 +109,26 @@ p { color: black ;
       background: rgba(255, 255, 255, 0.06);
       backdrop-filter: blur(0px);
     }
+
+    /* CART ICON (SVG) */
+    #cart-icon {
+      border: none;
+      background: transparent;
+      padding: 10px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     
+    #cart-icon img {
+      width: 30px;
+      height: 30px;
+      display: block;
+      filter: invert(1); /* 👈 gør SVG hvid */
+    }
+    
+
+
     .menu a:hover,
     .menu a:focus-visible {
       background: #ffffff;   /* 👈 helt hvid */
@@ -224,7 +258,7 @@ p { color: black ;
     font-family: "brillant", serif;
     text-align: center;
     margin: 16px 0 0; 
-    font-size: clamp(4rem, 10vw, 6rem);
+    font-size: clamp(6rem, 12vw, 8rem);
     line-height: 1.5;
     letter-spacing: 0.8px;
   }  
@@ -253,6 +287,23 @@ p { color: black ;
   border-color: #fff;
   outline: none;
 }
+
+.hero-logo {
+  position: relative;
+  z-index: 2;              /* over overlay */
+  width: min(92%, 1100px);
+  margin: 0 auto;
+  padding-top: 120px;      /* justér højden her */
+  padding-left: 16px;      /* flugter med hero-tekst */
+}
+
+.hero-logo img {
+  max-width: 850px;        /* justér logo-størrelse */
+  width: 100%;
+  height: auto;
+}
+
+
 
 /* Intro-SEKTION */
 
