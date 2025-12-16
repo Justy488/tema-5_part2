@@ -182,7 +182,7 @@ nav {
 
 img {
   display: block;
-  margin: auto;
+  margin: 0 auto 2em; /* tilføjet til auto setting, så billede ikke går ud over fældt. */
   max-width: fit-content;
   max-width: 100%;
   height: auto;
