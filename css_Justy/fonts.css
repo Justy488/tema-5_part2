@@ -64,12 +64,16 @@ h1 {
   text-align: center;
 
   color: rgba(0, 0, 0, 8);
+  padding: 1em;
+  margin: 2em 0 0 0;
 }
 
 h2 {
   font-family: playfair display;
   text-align: center;
   color: rgb(106 41 49);
+  padding: 10px;
+  margin: 10px;
 }
 h3 {
   font-family: Montserrat;
@@ -80,4 +84,16 @@ p {
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   color: rgba(0, 0, 0, 8);
+  max-width: 80ch;
+
+  padding: 0.5em 1em;
+  margin: 0 auto 1.5em;
+  font-size: 1.1rem;
+  color: rgb(1, 1, 2);
+  line-height: 1.5;
+  align-content: left;
+}
+
+.info p {
+  align-content: center;
 }
