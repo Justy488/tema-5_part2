@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="site-header">
       <div class="logo">
         <a href="index.html">
           <img src="img_amalie/rose_logo-16.svg" alt="Logo af Roses Blomster" />
@@ -17,11 +17,18 @@
       </div>
       <nav>
         <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="product.html">Items</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="kontact.html">Contact Us</a></li>
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="product.html">Buketter</a></li>
+          <li><a href="aboutus.html">Om butikken</a></li>
+          <li><a href="kontact.html">Kontakt</a></li>
+        
+          <li class="cart-item">
+            <a href="cart.html" id="cart-icon" aria-label="Se kurv">
+              <img src="img_amalie/shopping-cart-2-line.svg" alt="" />
+            </a>
+          </li>
         </ul>
+      
         <button class="burger">
           <span class="line"></span>
           <span class="line"></span>
@@ -36,11 +43,14 @@
           <img src="img_amalie/hero-2.jpg" alt="Kvinde kigger på smukke blomster ude foran Roses Blomsterbutik"/>
         </div>
 
+        <!-- SVG-logo ovenpå hero -->
+        <div class="hero-logo">
+          <img src="img_amalie/LOGO-til-hero.svg" alt="Roses Blomster logo">
+        </div>
+
         <!-- layout kun omkring tekstindholdet -->
         <div class="layout">
           <div class="hero-content">
-            <h1 class="hero-title">Roses Blomster</h1>
-          
             <ul class="hero-text">
               <li>Byens flotteste buketter</li>
               <li>Blomster til alle anledninger</li>
@@ -53,7 +63,7 @@
       </section>
 
       <section class="layout-info">
-        <h2 class="page-title">Gode tricks bliver aldrig for gamle</h2>
+        <h1 class="sections-title">Gode tricks bliver aldrig for gamle</h1>
         <p class="page-subtitle">
           Vidste du, at blomster holder sig længere, når de bliver behandlet korrekt fra start?
         </p>
@@ -66,7 +76,7 @@
       </section>
       
       <section class="feature">
-        <h3 class="feature-title">Københavns Ikoniske Blomsterhandler</h3>
+        <h2 class="feature-title">Københavns Ikoniske Blomsterhandler</h2>
       
         <div class="feature-grid">
       
@@ -79,13 +89,13 @@
           <!-- LILLE BILLEDE 1 -->
           <div class="feature-item feature-small">
             <img src="img_amalie/roses.jpg" alt="Udvalg af blomster" />
-            <a href="product.html" class="feature-cta">Om Roses Blomster</a>
+            <a href="aboutus.html" class="feature-cta">Om Roses Blomster</a>
           </div>
       
           <!-- LILLE BILLEDE 2 -->
           <div class="feature-item feature-small">
             <img src="img_amalie/kvadrat-down-right.jpg" alt="Detalje af buket" />
-            <a href="aboutus.html" class="feature-cta">Vælg anledning</a>
+            <a href="kontact.html" class="feature-cta">Vælg anledning</a>
           </div>
       
         </div>
@@ -126,9 +136,8 @@
             <h3>Roses Blomster</h3>
             <p>
               Besøg vores unikke blomsterbutik<br />
-              Få 10% i rabat ved dit næste køb
             </p>
-            <a class="card-btn" href="product.html">Rabatkode</a>
+            <a class="card-btn" href="#map">Besøg</a>
           </article>
       
           <!-- Card: billede -->
@@ -151,12 +160,45 @@
             </p>
             <a class="card-btn" href="product.html">Opdag</a>
           </article>
-      
         </div>
       </section>
     </main>
 
-    <script src="menu.js"></script>
+    <script src="menu/menu.js"></script>
     <script src="js/login.js"></script>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+    
+        <!-- Åbningstider -->
+        <div class="footer-hours">
+          <h3>Åbningstider</h3>
+          <p>Mandag–Fredag: 10:00–18:00</p>
+          <p>Lørdag: 10:00–14:00</p>
+          <p>Søndag: Lukket</p>
+        </div>
+    
+        <!-- Logo -->
+        <div class="footer-logo">
+          <img src="img_amalie/Roses-logo-footer.svg" alt="Roses Blomster logo">
+        </div>
+    
+        <!-- Kort -->
+        <div class="footer-map" id="map">
+          <iframe
+            src="https://www.google.com/maps?q=Dronningens%20Tv%C3%A6rgade%2021,%201302%20K%C3%B8benhavn&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>        
+      </div>
+    
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        © 2025 Roses Blomster
+      </div>
+    </footer>
+    
+
   </body>
 </html>
