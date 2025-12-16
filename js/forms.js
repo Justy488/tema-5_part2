@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // BEAUTIFUL FORMATTED OUTPUT ✨
     const summary = `
-      <div style="text-align: left;">
+      <div style="text-align: center;">
         
         <strong>Thank you, ${fullname || "dear customer"}!</strong><br>
         We have received your inquiry.<br><br>
