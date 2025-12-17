@@ -123,7 +123,7 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: #ffffff;
+    background-color: #615f5f;
     position: absolute;
     top: 94px;
     left: 0;
@@ -146,7 +146,7 @@ nav {
 .hero {
   position: relative;
   height: 70vh;
-  background-image: url("../img/img_justy/header_image.png");
+  background-image: url("../img/img_justy/flower_vidviid.gif");
 
   background-size: cover;
   background-position: center;
@@ -182,10 +182,11 @@ nav {
 
 img {
   display: block;
-  margin: auto;
+  margin: 0 auto 2em; /* tilføjet til auto setting, så billede ikke går ud over fældt. */
   max-width: fit-content;
   max-width: 100%;
   height: auto;
+  border-radius: 2em;
 }
 
 #second img {
