@@ -1,7 +1,10 @@
+/* HEADER + NAV */
+
 .header {
   position: relative;
   width: 100%;
 }
+
 .nav {
   background-color: #6a2931;
   width: 100%;
@@ -10,12 +13,22 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .logo svg {
   width: 100px;
   height: 80px;
 }
 
-/*        PLACEMENT OF  MENU           */
+.herotitle {
+  color: white;
+  font-size: 2rem;
+  font-family: "Merriweather", serif;
+  letter-spacing: 2px;
+  margin-left: 1rem; /* space from logo */
+}
+
+/* DESKTOP MENU */
+
 .menu {
   display: flex;
   gap: 2rem;
@@ -36,11 +49,13 @@
   color: black;
 }
 
-/*    PLACEMENT OF BURGER */
+/* BURGER BUTTON */
+
 .burger {
   display: none;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .burger .line {
@@ -50,30 +65,18 @@
   margin: 5px 0;
 }
 
-.herotitle {
-  color: white;
-  font-size: 2rem;
-  font-family: "Merriweather", serif;
-  letter-spacing: 2px;
-  margin-left: 1rem; /* little space from the logo */
-}
-
 /* CONTACT FORM  */
 
 .kontakt-form-section {
   padding: 1.5rem 1.25rem 2rem;
-  background-color: #c0c0c0; /* light grey box */
-  border-radius: 12px; /* soft rounded corners */
+  background-color: #c0c0c0;
+  border-radius: 12px;
   max-width: 600px;
   margin: 2rem auto;
 }
 
 .kontakt-form label {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.kontakt-form-section {
-  padding: 1.5rem 1.25rem 2rem;
 }
 
 .form-title {
@@ -109,7 +112,7 @@
 .kontakt-form textarea {
   width: 100%;
   padding: 0.85rem 1rem;
-  border-radius: 999px; /* long pill shape */
+  border-radius: 999px;
   border: 1px solid #d4d4d4;
   background-color: #f3f3f3;
   font: inherit;
@@ -155,16 +158,138 @@
   max-width: 480px;
   margin: 0 auto;
   min-height: 180px;
-  background-color: #e3e3e3;
+  background-color: #ffffff;
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+  display: block;
   text-align: center;
-  padding: 1rem;
-  font-size: 0.8rem;
+
+  padding: 1.2rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
 }
 
+/* FOOTER */
+
+.footer {
+  color: rgb(0, 0, 0);
+  padding: 2rem 1rem;
+}
+
+/* 3-COLUMN GRID LAYOUT */
+.footer-grid {
+  max-width: 1000px;
+  margin: 0 auto 1.5rem; /* centers grid & adds space above © */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* Generic column styling */
+.footer-column {
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== LEFT COLUMN: CONTACT INFO ===== */
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem; /* tighter spacing between lines */
+  font-size: 0.9rem;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-item i {
+  font-size: 1.2rem;
+  color: #6a2931;
+}
+
+.footer-item a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.footer-item a:hover {
+  text-decoration: underline;
+}
+
+/* ===== MIDDLE COLUMN: SINGLE SVG LOGO ===== */
+
+.footer-middle svg {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== RIGHT COLUMN: ÅBNINGSTIDER ===== */
+
+.footer-opening {
+  justify-content: flex-end;
+}
+
+.opening {
+  text-align: left;
+  max-width: 280px;
+}
+
+/* title */
+.opening-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0.75rem;
+}
+
+/* rows container */
+.opening-rows {
+  margin-bottom: 1rem;
+}
+
+/* each line: day left, time right */
+.opening-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.opening-label {
+  font-weight: 700; /* bold day names */
+}
+
+.opening-value {
+  font-weight: 400;
+}
+
+/* small note under times */
+.opening-note {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: center;
+  margin-top: 0.8rem;
+  max-width: 24ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* COPYRIGHT LINE */
+.footer-bottom {
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* RESPONSIVE: FORM + OUTPUT PADDING */
 @media (min-width: 600px) {
   .kontakt-form-section,
   .kontakt-output {
