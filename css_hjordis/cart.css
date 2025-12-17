@@ -19,16 +19,16 @@
   justify-content: center;
   visibility: hidden;
 }
-.product_box .price_and_cart {
+.product-box .price-and-cart {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.price_and_cart .price {
+.price-and-cart .price {
   font-size: 18px;
 }
-.price_and_cart .add-cart {
+.price-and-cart .add-cart {
   padding: 10px;
   font-size: 20px;
   cursor: pointer;
@@ -38,7 +38,7 @@
 .cart {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 100%;
   width: 360px;
   height: 100%;
   background: #fcf9f1;
@@ -46,6 +46,10 @@
   padding: 65px 20px 40px;
   z-index: 100;
   overflow: auto;
+  transition: 0.5s;
+}
+.cart.active {
+  right: 0;
 }
 
 .cart-title {
@@ -73,9 +77,8 @@
   font-size: 16px;
   line-height: 1;
   font-family: "Courier Prime", monospace;
-  text-align: left;
-  padding: 0;
-  margin-left: 0;
+  margin-top: 0;
+  text-align: start;
 }
 .cart-price {
   font-weight: 500;
@@ -113,7 +116,6 @@
 .cart-remove {
   font-size: 25px;
   cursor: pointer;
-  margin: 1em;
 }
 .total {
   display: flex;

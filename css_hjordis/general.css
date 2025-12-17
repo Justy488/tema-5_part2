@@ -17,11 +17,11 @@ p,
   font-weight: 400;
   font-style: normal;
 }
-.product_text p {
+.product-text p {
   margin: 1em;
   text-align: justify;
 }
-.product_text h2 {
+.product-text h2 {
   text-align: center;
   font-size: 24px;
 }
@@ -31,23 +31,23 @@ p,
   text-align: justify;
 }
 
-.product_content {
+.product-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
-.product_grid {
+.product-grid {
   padding: 60px 5% 30px;
 }
 
-.product_box .img_box {
+.product-box .img-box {
   display: flex;
 }
-.img_box img {
+.img-box img {
   width: 100%;
 }
-.product_box .product_title {
+.product-box .product-title {
   font-size: 1.1rem;
   margin-top: 10px;
   font-family: "Courier Prime", monospace;
@@ -58,21 +58,21 @@ p,
 }
 
 @media (min-width: 800px) {
-  .product_content {
+  .product-content {
     grid-template-columns: repeat(3, 1fr);
   }
-  .product_grid {
+  .product-grid {
     padding: 100px 9% 30px;
   }
-  .product_text h2 {
+  .product-text h2 {
     font-size: 36px;
   }
-  .product_text p {
+  .product-text p {
     text-align: center;
     margin: 1em;
     font-size: 20px;
   }
-  .product_text h1 {
+  .product-text h1 {
     font-size: 60px;
   }
 }
