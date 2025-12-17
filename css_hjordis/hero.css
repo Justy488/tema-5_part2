@@ -123,7 +123,7 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: rgb(93, 21, 78);
+    background-color: rgb(0, 0, 0);
     position: absolute;
     top: 94px;
     left: 0;
