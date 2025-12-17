@@ -74,6 +74,7 @@ nav {
   text-align: end;
   border: #ffffff solid 2px;
   border-radius: 2em;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .menu a:hover {
