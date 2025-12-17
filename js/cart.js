@@ -33,7 +33,13 @@ const addToCart = (productBox) => {
           </div>
           <i class="ri-delete-bin-line cart-remove"></i>
           `;
-  cartContent.appendChild(cartBox);
+  // insert new cart item before the .total element so total and buy button remain at the bottom
+  const totalElement = cartContent.querySelector(".total");
+  if (totalElement) {
+    cartContent.insertBefore(cartBox, totalElement);
+  } else {
+    cartContent.appendChild(cartBox);
+  }
 
   cartBox.querySelector(".cart-remove").addEventListener("click", () => {
     cartBox.remove();
