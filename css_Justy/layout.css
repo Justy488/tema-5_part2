@@ -49,8 +49,14 @@
 /* Styling af SecWoW */
 .overlap {
   position: relative;
-  padding: 8rem 10%;
-  background: #f6f3ee;
+  height: 70vh;
+  background-image: url("../img/img_justy/boxvid.gif");
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .overlap img {
